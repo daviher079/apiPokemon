@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -16,12 +14,18 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  padding: 25px;
+  
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.miCabecera
+{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
 .App-link {
@@ -35,4 +39,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.lista
+{
+  margin-top:50px;
+  width: 400px;
+  border: 5px solid#61dafb;
+  border-radius: 20px;
+  padding: 15px;
 }
