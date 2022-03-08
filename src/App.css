@@ -42,16 +42,7 @@
 }
 
 
-.lista
-{
-  margin-top:50px;
-  max-width: 100vw;
-  border: 5px solid#61dafb;
-  border-radius: 20px;
-  padding: 15px;
-  column-gap:10px;
-  column-count:2;
-}
+
 
 h4
 {
@@ -93,3 +84,32 @@ h6
 {
   margin: 0;
 }
+
+@media screen and (min-width: 300px) and (max-width: 780px){
+  .lista
+  {
+    margin-top:50px;
+    max-width: 100vw;
+    border: 5px solid#61dafb;
+    border-radius: 20px;
+    padding: 15px;
+  }
+}
+
+
+@media screen and (min-width: 780px) and (max-width: 1800px){
+  .lista
+  {
+    margin-top:50px;
+    max-width: 100vw;
+    border: 5px solid#61dafb;
+    border-radius: 20px;
+    padding: 15px;
+    column-gap:10px;
+    column-count:2;
+  }
+}
+
+
+
+
