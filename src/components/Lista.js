@@ -1,11 +1,25 @@
+import {useEffect, useState} from 'react';
+import Pokemon from './Pokemon';
 function Lista(props) {
-    const {nombres}=props;
-    console.log({nombres});
+    
+    const {nombres} = props;
+    
+
+
     return ( 
 
         <section className="lista">
-            <h6>Lista de los 50 primeros pokemon</h6>
-
+            {
+                nombres.map((nombre, index)=>{
+                    
+                    return(
+                        <div key={index} className="pokemon">
+                            <h4>{nombre.name[0].toUpperCase() + nombre.name.slice(1)}</h4>
+                            <Pokemon url={nombre.url}/>
+                        </div>
+                    ) 
+                })
+            }
         </section>
      );
 }
